@@ -4,7 +4,8 @@ const Header = () => {
   return (
     <div className="flex justify-between">
       <div className="">
-        <img className="" src="./logo.png" />
+        <a href="/" />
+        <img src="./logo.svg" alt="logo" />
       </div>
       <div>
         <ul className="flex justify-around items-center gap-10">
