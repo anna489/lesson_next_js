@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
 import RecentBlog from "./RecentBlog";
+import Footer from "./Footer";
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
@@ -14,9 +15,10 @@ export default function Home() {
     setBlogs(data);
   };
   return (
-    <main className={`flex flex-col  justify-between p-24 `}>
+    <main className={`flex flex-col  justify-between p-20 `}>
       <Header />
       <RecentBlog blogs={blogs} />
+      <Footer />
     </main>
   );
 }

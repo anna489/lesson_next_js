@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="flex flex-col  justify-between p-20 ">
       <Header />
     </div>
   );
