@@ -6,19 +6,24 @@ const RecentBlog = ({ blogs }) => {
       <div>
         <h1 class="p-5 text-2xl font-normal">Recent Blog posts</h1>
         <div class="grid grid-rows-3 grid-flow-col gap-4 ">
-          <div class="row-span-3 bg-slate-300 border">
-            <div>
-              <img src={blogs[0].cover_image} />
-              <p></p>
+          <div class="row-span-3 bg-slate-300 border ">
+            <div className="">
+              <img src={blogs[0]?.cover_image} />
+              <p>{blogs[0]?.readable_publish_date}</p>
             </div>
           </div>
           <div class="col-span-2 bg-slate-500">
             <div>
-              <img src={blogs[0].cover_image} />
-              <p></p>
+              <img src={blogs[0]?.cover_image} />
+              <p>{blogs[0]?.readable_publish_date}</p>
             </div>
           </div>
-          <div class="row-span-2 col-span-2 bg-slate-600">03</div>
+          <div class="row-span-2 col-span-2 bg-slate-600">
+            <div>
+              <img src={blogs[0]?.cover_image} />
+              <p>{blogs[0]?.readable_publish_date}</p>
+            </div>
+          </div>
         </div>
       </div>
       <div>
