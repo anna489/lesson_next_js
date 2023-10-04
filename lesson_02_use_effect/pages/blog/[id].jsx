@@ -1,6 +1,8 @@
+import Header from "../Header";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { formatDate } from "@/utils/functions";
+import Footer from "../Footer";
 
 const BlogDetail = () => {
   const router = useRouter();
@@ -22,8 +24,9 @@ const BlogDetail = () => {
   }, []);
 
   return (
-    <div className="container bg-violet-300 mx-auto mt-24 max-w-4xl">
-      <div>
+    <div className="container  mx-auto mt-24 max-w-4xl p-8">
+      <Header />
+      <div className="mt-20">
         {blogDetailData ? (
           <>
             <div>
@@ -57,6 +60,9 @@ const BlogDetail = () => {
         ) : (
           <div>Loading...</div>
         )}
+      </div>
+      <div className="mt-20">
+        <Footer />
       </div>
     </div>
   );

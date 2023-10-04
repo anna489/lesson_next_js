@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
+git;
 const Header = () => {
   // const [query, setQuery] = useState("");
   return (
     <div className="flex justify-between ">
       <div className="">
         <a href="/" />
-        <img src="./Logo (2).png" alt="logo" />
+        <img href="/" src="/Logo (2).png" alt="logo" />
       </div>
       <div>
         <ul className="flex justify-around items-center gap-10 text-gray-500">

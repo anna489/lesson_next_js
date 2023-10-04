@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto p-8 bg-slate-100">
+    <div className="container mx-auto p-8 bg-slate-100 ">
       <div class="grid grid-cols-3 justify-between gap-20  ">
         <div className=" gap-5 grid">
-          <h1>About</h1>
+          <h1 style={{}}>About</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
