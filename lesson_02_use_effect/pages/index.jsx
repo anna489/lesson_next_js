@@ -8,6 +8,7 @@ export default function Home() {
   useEffect(() => {
     fetchData();
   }, []);
+
   const fetchData = async () => {
     const res = await fetch("https://dev.to/api/articles");
     const data = await res.json();
@@ -15,7 +16,7 @@ export default function Home() {
     setBlogs(data);
   };
   return (
-    <main className={`flex flex-col  justify-between p-20 `}>
+    <main className={`flex flex-col  justify-between`}>
       <Header />
       <RecentBlog blogs={blogs} />
       <Footer />

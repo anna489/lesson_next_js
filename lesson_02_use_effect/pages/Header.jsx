@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-git;
+
 const Header = () => {
   // const [query, setQuery] = useState("");
   return (
-    <div className="flex justify-between ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between   container mx-auto py-20">
       <div className="">
         <a href="/" />
         <img href="/" src="/Logo (2).png" alt="logo" />
@@ -22,11 +22,11 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className=" md:justify-self-end justify-self-center">
         <input
           type="text"
           placeholder="Search"
-          class="border text focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none w-full text-lg placeholder-slate-400 rounded-md pl-10 ring-1 ring-slate-200 shadow-sm"
+          class="border text focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none  text-lg placeholder-slate-400 rounded-md pl-10 ring-1 ring-slate-200 shadow-sm"
           aria-label="Filter projects "
           // onChange={(event) => setQuery(event.target.value)}
         />

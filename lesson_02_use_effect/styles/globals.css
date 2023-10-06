@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+p{
+    color: #696A75;
+}

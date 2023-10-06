@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col p-20 ">
+    <div className="container mx-auto p-8 ">
       <Header />
-      <div className="mt-20 justify-center items-center">
+      <div className="mt-20 justify-center ">
         <h2 style={{ fontSize: "36px", fontWeight: "600" }}>Contact us</h2>
         <p
           style={{
@@ -24,7 +24,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="mt-10 gap-10 flex justify-center">
-        <div className="border rounded p-3 ">
+        <div className="border rounded p-3 w-[50%]">
           <h1 style={{ fontWeight: "500", fontSize: "20px" }}>Address</h1>
           <p
             style={{
@@ -38,7 +38,7 @@ const Contact = () => {
             info@email.com
           </p>
         </div>
-        <div className="border rounded p-3">
+        <div className="border rounded p-3 w-[50%]">
           <h1 style={{ fontWeight: "500", fontSize: "20px" }}>Conatct</h1>
           <p
             style={{

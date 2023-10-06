@@ -25,7 +25,7 @@ const Errorpage = () => {
             We're sorry, This page is unknown or does not exist the page you are
             looking for.
           </p>
-          <button className="bg-blue-600 rounded text-white p-3">
+          <button className="bg-blue-600 rounded text-white p-3 mt-3">
             <ul>
               <li>
                 <a href="/">Back To home</a>
