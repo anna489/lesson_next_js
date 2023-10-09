@@ -54,7 +54,13 @@ const Blog = () => {
           </Link>
         ))}
       </div>
-      <Footer />
+      <div className="flex justify-center mt-10 font-medium ">
+        <button className="border  rounded ">Load more</button>
+      </div>
+      <div className="mt-10">
+        {" "}
+        <Footer />
+      </div>
     </div>
   );
 };

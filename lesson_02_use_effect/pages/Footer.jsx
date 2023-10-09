@@ -31,6 +31,7 @@ const Footer = () => {
               <li>
                 <img src="./Negative.png" />
               </li>
+
               <li>
                 <img src="./twitter.png" />
               </li>
@@ -43,6 +44,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="border bg-slate-300 mt-5"></div>
         <div class="justify-between flex mt-10">
           <div>
             <img src="./Logo (2).png" />
@@ -50,7 +52,9 @@ const Footer = () => {
           <div>
             <ul class="flex gap-10">
               <li>Terms of Use </li>
+              <div className="border bg-slate-300"></div>
               <li>Privacy Policy</li>
+              <div className="border bg-slate-300"></div>
               <li>Cookie Policy</li>
             </ul>
           </div>

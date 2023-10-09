@@ -102,11 +102,9 @@ const RecentBlog = ({ blogs }) => {
             </div>
           </Link>
         ))}
-        <div>
-          <button className="border justify-center flex rounded ">
-            Load more
-          </button>
-        </div>
+      </div>
+      <div className="flex justify-center mt-10 font-medium ">
+        <button className="border  rounded ">Load more</button>
       </div>
     </div>
   );

@@ -5,12 +5,12 @@ const Header = () => {
   // const [query, setQuery] = useState("");
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between   container mx-auto py-20">
-      <div className="">
+      <div>
         <a href="/" />
         <img href="/" src="/Logo (2).png" alt="logo" />
       </div>
       <div>
-        <ul className="flex justify-around items-center gap-10 text-gray-500">
+        <ul className="flex justify-around items-center gap-10 text-gray-500 font-medium">
           <li>
             <a href="/">Home</a>
           </li>
