@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 
 const Contact = () => {
   return (
     <div className="container mx-auto p-8 ">
-      <Header />
       <div className="mt-20 justify-center ">
         <h2 style={{ fontSize: "36px", fontWeight: "600" }}>Contact us</h2>
         <p
@@ -39,7 +38,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="border rounded p-3 w-[50%]">
-          <h1 style={{ fontWeight: "500", fontSize: "20px" }}>Conatct</h1>
+          <h1 style={{ fontWeight: "500", fontSize: "20px" }}>Contact</h1>
           <p
             style={{
               fontSize: "16px",
@@ -84,9 +83,7 @@ const Contact = () => {
           Send Message
         </button>
       </div>
-      <div className="mt-10">
-        <Footer />
-      </div>
+      <div className="mt-10"></div>
     </div>
   );
 };

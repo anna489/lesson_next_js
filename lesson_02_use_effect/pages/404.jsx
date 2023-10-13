@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 
 const Errorpage = () => {
   return (
     <div className="flex flex-col  justify-between p-20">
-      <Header />
-
       <div className="flex gap-20 mt-20 items-center justify-center">
         <div>
           <h1
@@ -34,9 +32,7 @@ const Errorpage = () => {
           </button>
         </div>
       </div>
-      <div className="mt-20">
-        <Footer />
-      </div>
+      <div className="mt-20"></div>
     </div>
   );
 };

@@ -1,24 +1,31 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+
 import Link from "next/link";
 
 import { useState, useEffect } from "react";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const [pages, setPages] = useState(9);
+
   const fetchData = async () => {
-    const res = await fetch("https://dev.to/api/articles");
+    const res = await fetch(`https://dev.to/api/articles?per_page=${pages}`);
     const data = await res.json();
     console.log(data);
     setBlogs(data);
   };
+
+  function handleNext() {
+    console.log("daraagiin huudas darlaa");
+    setPages(pages + 3);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, [pages]);
+
   return (
-    <div className="container mx-auto p-8 ">
-      <Header />
+    <div className="container mx-auto lg:p-8 md:p-2">
       <div>
         <h1 class="p-5 text-2xl font-medium">All Blog Posts</h1>
       </div>
@@ -55,11 +62,12 @@ const Blog = () => {
         ))}
       </div>
       <div className="flex justify-center mt-10 font-medium ">
-        <button className="border  rounded ">Load more</button>
-      </div>
-      <div className="mt-10">
-        {" "}
-        <Footer />
+        <button
+          onClick={handleNext}
+          className="border px-5 py-3 rounded-[6px] hover:bg-green-600 hover:text-white active:bg-green-900 active:text-white"
+        >
+          Load More ...
+        </button>
       </div>
     </div>
   );
